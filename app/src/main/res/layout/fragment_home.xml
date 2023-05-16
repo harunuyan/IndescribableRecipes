@@ -4,6 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintBottom_toBottomOf="@id/tv_header_home"
+        app:layout_constraintEnd_toStartOf="@id/iv_bookmark"
+        app:layout_constraintTop_toTopOf="@id/tv_header_home" />
+
+    <ImageView
+        android:id="@+id/iv_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_bookmark"
+        app:layout_constraintBottom_toBottomOf="@id/tv_header_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_header_home" />
+
     <TextView
         android:id="@+id/tv_header_home"
         android:layout_width="0dp"
@@ -12,35 +32,35 @@
         android:text="@string/indescribable_recipes"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_notification"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_random_recipes"
+        android:id="@+id/tv_recent_recipes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:text="@string/random_recipes"
+        android:text="@string/recent_recipes"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/iv_more_random_recipes"
+        app:layout_constraintEnd_toStartOf="@id/iv_more_recent_recipes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_header_home" />
 
     <ImageView
-        android:id="@+id/iv_more_random_recipes"
+        android:id="@+id/iv_more_recent_recipes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_right"
-        app:layout_constraintBottom_toBottomOf="@id/tv_random_recipes"
+        app:layout_constraintBottom_toBottomOf="@id/tv_recent_recipes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_random_recipes" />
+        app:layout_constraintTop_toTopOf="@id/tv_recent_recipes" />
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_random_recipes"
+        android:id="@+id/rv_recent_recipes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -48,7 +68,7 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_random_recipes" />
+        app:layout_constraintTop_toBottomOf="@id/tv_recent_recipes" />
 
     <TextView
         android:id="@+id/tv_your_bookmark"
@@ -59,7 +79,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rv_random_recipes" />
+        app:layout_constraintTop_toBottomOf="@id/rv_recent_recipes" />
 
     <ImageView
         android:id="@+id/iv_more_your_bookmark"
@@ -82,5 +102,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_your_bookmark" />
 
+    <TextView
+        android:id="@+id/tv_your_recipes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/your_bookmark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_your_bookmark" />
+
+    <ImageView
+        android:id="@+id/iv_more_your_recipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_right"
+        app:layout_constraintBottom_toBottomOf="@id/tv_your_recipes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_your_recipes" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_your_recipes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_your_recipes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
