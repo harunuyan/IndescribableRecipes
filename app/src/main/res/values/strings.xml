@@ -18,4 +18,5 @@
     <string name="notification">Notification</string>
     <string name="you_don_t_have_any_notification_at_this_time">You don\'t have any notification at this time</string>
     <string name="empty">Empty</string>
+    <string name="your_recipes">Your Recipes</string>
 </resources>

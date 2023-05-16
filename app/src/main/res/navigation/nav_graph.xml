@@ -17,9 +17,9 @@
         android:name="com.ui.fragment.DiscoverFragment"
         android:label="DiscoverFragment" />
     <fragment
-        android:id="@+id/favoriteFragment"
-        android:name="com.ui.fragment.FavoriteFragment"
-        android:label="FavoriteFragment" />
+        android:id="@+id/bookmarkFragment"
+        android:name="com.ui.fragment.BookmarkFragment"
+        android:label="bookmarkFragment" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.ui.fragment.ProfileFragment"
@@ -40,4 +40,12 @@
         android:id="@+id/notificationSystemFragment"
         android:name="com.ui.fragment.NotificationSystemFragment"
         android:label="NotificationSystemFragment" />
+    <fragment
+        android:id="@+id/addRecipesFragment"
+        android:name="com.ui.fragment.AddRecipesFragment"
+        android:label="AddRecipesFragment" />
+    <fragment
+        android:id="@+id/myRecipesFragment"
+        android:name="com.ui.fragment.MyRecipesFragment"
+        android:label="MyRecipesFragment" />
 </navigation>
