@@ -8,4 +8,11 @@
     <string name="random_recipes">Random Recipes</string>
     <string name="your_bookmark">Your Bookmark</string>
     <string name="indescribable_recipes">Indescribable Recipes</string>
+    <string name="search_for_recipes">Search for Recipes</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="recipe_categories">Recipe Categories</string>
+    <string name="filter_by">Filter by</string>
+    <string name="nutriens">Nutriens</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="all">All</string>
 </resources>
