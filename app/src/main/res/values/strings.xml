@@ -15,4 +15,7 @@
     <string name="nutriens">Nutriens</string>
     <string name="ingredients">Ingredients</string>
     <string name="all">All</string>
+    <string name="notification">Notification</string>
+    <string name="you_don_t_have_any_notification_at_this_time">You don\'t have any notification at this time</string>
+    <string name="empty">Empty</string>
 </resources>

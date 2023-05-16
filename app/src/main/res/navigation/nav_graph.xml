@@ -7,7 +7,11 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.ui.fragment.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/discoverFragment"
         android:name="com.ui.fragment.DiscoverFragment"
@@ -24,4 +28,16 @@
         android:id="@+id/settingFragment"
         android:name="com.ui.fragment.SettingFragment"
         android:label="SettingFragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.ui.fragment.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/notificationGeneralFragment"
+        android:name="com.ui.fragment.NotificationGeneralFragment"
+        android:label="NotificationGeneralFragment" />
+    <fragment
+        android:id="@+id/notificationSystemFragment"
+        android:name="com.ui.fragment.NotificationSystemFragment"
+        android:label="NotificationSystemFragment" />
 </navigation>
