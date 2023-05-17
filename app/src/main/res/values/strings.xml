@@ -20,4 +20,7 @@
     <string name="empty">Empty</string>
     <string name="your_recipes">Your Recipes</string>
     <string name="my_bookmark">My Bookmark</string>
+    <string name="instructions">Instructions</string>
+    <string name="comments">Comments</string>
+    <string name="add_a_comment">Add a comment</string>
 </resources>

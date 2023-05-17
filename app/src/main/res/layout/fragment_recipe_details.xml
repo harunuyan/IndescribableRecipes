@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recipe_details_image"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_bookmark"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back"
+            app:layout_constraintEnd_toStartOf="@id/iv_send"
+            app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_more"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+        <TextView
+            android:id="@+id/tv_recipes_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="Vegetable and Salad  with Balsamic Dressing Food"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_recipe_details_image" />
+
+
+        <View
+            android:id="@+id/view_first"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="18dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_recipes_title" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_user_profile_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:src="@color/gray"
+            app:layout_constraintStart_toStartOf="@id/view_first"
+            app:layout_constraintTop_toBottomOf="@id/view_first"
+            app:shapeAppearanceOverlay="@style/CircularImageView" />
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Jane Cooper"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_user_profile_photo"
+            app:layout_constraintTop_toTopOf="@id/iv_user_profile_photo" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="jane_cooper"
+            app:layout_constraintBottom_toBottomOf="@id/iv_user_profile_photo"
+            app:layout_constraintStart_toStartOf="@id/tv_full_name" />
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="Follow"
+            app:layout_constraintBottom_toBottomOf="@id/iv_user_profile_photo"
+            app:layout_constraintEnd_toEndOf="@id/view_first"
+            app:layout_constraintTop_toTopOf="@id/iv_user_profile_photo" />
+
+        <View
+            android:id="@+id/view_second"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="18dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_user_profile_photo" />
+
+        <TextView
+            android:id="@+id/tv_description_recipes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Description of Recipes"
+            app:layout_constraintEnd_toEndOf="@id/view_second"
+            app:layout_constraintStart_toStartOf="@id/view_second"
+            app:layout_constraintTop_toBottomOf="@id/view_second" />
+
+        <LinearLayout
+            android:id="@+id/ll_cook_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/search_background"
+            android:backgroundTint="@color/gray"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="@id/iv_user_profile_photo"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_recipes">
+
+            <TextView
+                android:id="@+id/tv_cook_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="10 mins"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="cook time"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cook_serves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/search_background"
+            android:backgroundTint="@color/gray"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintEnd_toStartOf="@id/ll_cook_location"
+            app:layout_constraintStart_toEndOf="@id/ll_cook_time"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_recipes">
+
+            <TextView
+                android:id="@+id/tv_cook_serves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="1 serving"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="serves"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cook_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/search_background"
+            android:backgroundTint="@color/gray"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="@id/btn_follow"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_recipes">
+
+            <TextView
+                android:id="@+id/tv_cook_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="USA"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="origin"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_third"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="18dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_cook_time" />
+
+        <TextView
+            android:id="@+id/tv_ingredients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/ingredients"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/view_third"
+            app:layout_constraintStart_toStartOf="@id/tv_recipes_title"
+            app:layout_constraintTop_toBottomOf="@id/view_third" />
+
+        <ListView
+            android:id="@+id/list_view_ingredients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/btn_follow"
+            app:layout_constraintStart_toStartOf="@id/iv_user_profile_photo"
+            app:layout_constraintTop_toBottomOf="@id/tv_ingredients" />
+
+        <TextView
+            android:id="@+id/tv_instructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/instructions"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/view_third"
+            app:layout_constraintStart_toStartOf="@id/tv_recipes_title"
+            app:layout_constraintTop_toBottomOf="@id/list_view_ingredients" />
+
+        <ListView
+            android:id="@+id/list_view_instructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/btn_follow"
+            app:layout_constraintStart_toStartOf="@id/iv_user_profile_photo"
+            app:layout_constraintTop_toBottomOf="@id/tv_instructions" />
+
+        <View
+            android:id="@+id/view_fourth"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_margin="18dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list_view_instructions" />
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/comments"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/view_third"
+            app:layout_constraintStart_toStartOf="@id/tv_recipes_title"
+            app:layout_constraintTop_toBottomOf="@id/view_fourth" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right"
+            app:layout_constraintBottom_toBottomOf="@id/tv_comments"
+            app:layout_constraintEnd_toEndOf="@id/view_fourth"
+            app:layout_constraintTop_toTopOf="@id/tv_comments" />
+
+        <ListView
+            android:id="@+id/list_view_comments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/btn_follow"
+            app:layout_constraintStart_toStartOf="@id/iv_user_profile_photo"
+            app:layout_constraintTop_toBottomOf="@id/tv_comments" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_user_comment_profile_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:src="@color/gray"
+            app:layout_constraintStart_toStartOf="@id/view_first"
+            app:layout_constraintTop_toBottomOf="@id/list_view_comments"
+            app:shapeAppearanceOverlay="@style/CircularImageView" />
+
+        <EditText
+            android:id="@+id/et_add_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/search_background"
+            android:hint="@string/add_a_comment"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="@id/view_fourth"
+            app:layout_constraintStart_toEndOf="@id/iv_user_comment_profile_photo"
+            app:layout_constraintTop_toTopOf="@id/iv_user_comment_profile_photo" />
+
+        <ImageView
+            android:id="@+id/iv_send_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintBottom_toBottomOf="@id/et_add_comment"
+            app:layout_constraintEnd_toEndOf="@id/et_add_comment"
+            app:layout_constraintTop_toTopOf="@id/et_add_comment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
