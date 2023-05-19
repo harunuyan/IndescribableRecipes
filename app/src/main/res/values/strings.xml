@@ -23,4 +23,19 @@
     <string name="instructions">Instructions</string>
     <string name="comments">Comments</string>
     <string name="add_a_comment">Add a comment</string>
+    <string name="create">Create</string>
+    <string name="save">Save</string>
+    <string name="publish">Publish</string>
+    <string name="title">Title</string>
+    <string name="recipe_title">Recipe Title</string>
+    <string name="description">Description</string>
+    <string name="recipe_description">Recipe Description</string>
+    <string name="cook_time">Cook Time</string>
+    <string name="_1_hour_30_mins_etc">1 hour, 30 mins. etc</string>
+    <string name="serves">Serves</string>
+    <string name="_3_people">3 people</string>
+    <string name="origin">Origin</string>
+    <string name="location">Location</string>
+    <string name="add_ingredients">Add Ingredients</string>
+    <string name="add_instructions">Add Instructions</string>
 </resources>
