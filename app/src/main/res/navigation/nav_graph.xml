@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.ui.fragment.HomeFragment"
+        android:name="com.ui.fragment.home.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_notificationFragment"
@@ -14,38 +14,38 @@
     </fragment>
     <fragment
         android:id="@+id/discoverFragment"
-        android:name="com.ui.fragment.DiscoverFragment"
+        android:name="com.ui.fragment.discover.DiscoverFragment"
         android:label="DiscoverFragment" />
     <fragment
         android:id="@+id/bookmarkFragment"
-        android:name="com.ui.fragment.BookmarkFragment"
+        android:name="com.ui.fragment.bookmark.BookmarkFragment"
         android:label="bookmarkFragment" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.ui.fragment.ProfileFragment"
+        android:name="com.ui.fragment.profile.ProfileFragment"
         android:label="ProfileFragment" />
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.ui.fragment.SettingFragment"
+        android:name="com.ui.fragment.setting.SettingFragment"
         android:label="SettingFragment" />
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.ui.fragment.NotificationFragment"
+        android:name="com.ui.fragment.notification.NotificationFragment"
         android:label="NotificationFragment" />
     <fragment
         android:id="@+id/notificationGeneralFragment"
-        android:name="com.ui.fragment.NotificationGeneralFragment"
+        android:name="com.ui.fragment.notification.NotificationGeneralFragment"
         android:label="NotificationGeneralFragment" />
     <fragment
         android:id="@+id/notificationSystemFragment"
-        android:name="com.ui.fragment.NotificationSystemFragment"
+        android:name="com.ui.fragment.notification.NotificationSystemFragment"
         android:label="NotificationSystemFragment" />
     <fragment
         android:id="@+id/addRecipesFragment"
-        android:name="com.ui.fragment.AddRecipesFragment"
+        android:name="com.ui.fragment.add_recipes.AddRecipesFragment"
         android:label="AddRecipesFragment" />
     <fragment
         android:id="@+id/myRecipesFragment"
-        android:name="com.ui.fragment.MyRecipesFragment"
+        android:name="com.ui.fragment.my_recipes.MyRecipesFragment"
         android:label="MyRecipesFragment" />
 </navigation>
