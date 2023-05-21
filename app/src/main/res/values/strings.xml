@@ -38,4 +38,8 @@
     <string name="location">Location</string>
     <string name="add_ingredients">Add Ingredients</string>
     <string name="add_instructions">Add Instructions</string>
+    <string name="edit">Edit</string>
+    <string name="following">following</string>
+    <string name="followers">followers</string>
+    <string name="recipes">recipes</string>
 </resources>
