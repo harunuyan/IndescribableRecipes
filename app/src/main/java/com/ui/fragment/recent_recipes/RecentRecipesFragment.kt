@@ -1,4 +1,4 @@
-package com.ui.fragment
+package com.ui.fragment.recent_recipes
 
 import androidx.fragment.app.Fragment
 

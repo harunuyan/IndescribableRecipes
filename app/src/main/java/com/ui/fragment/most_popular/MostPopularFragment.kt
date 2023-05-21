@@ -1,4 +1,4 @@
-package com.ui.fragment
+package com.ui.fragment.most_popular
 
 import android.os.Bundle
 import android.view.LayoutInflater

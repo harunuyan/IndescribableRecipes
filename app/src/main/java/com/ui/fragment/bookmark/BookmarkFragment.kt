@@ -1,14 +1,16 @@
-package com.ui.fragment
+package com.ui.fragment.bookmark
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.volie.indescribablerecipes.databinding.FragmentRecipeDetailsBinding
+import com.volie.indescribablerecipes.databinding.FragmentBookmarkBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class RecipeDetailsFragment : Fragment() {
-    private var _mBinding: FragmentRecipeDetailsBinding? = null
+@AndroidEntryPoint
+class BookmarkFragment : Fragment() {
+    private var _mBinding: FragmentBookmarkBinding? = null
     private val mBinding get() = _mBinding!!
 
     override fun onCreateView(
@@ -16,7 +18,9 @@ class RecipeDetailsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _mBinding = FragmentRecipeDetailsBinding.inflate(inflater, container, false)
+        _mBinding = FragmentBookmarkBinding.inflate(
+            inflater, container, false
+        )
         return mBinding.root
     }
 

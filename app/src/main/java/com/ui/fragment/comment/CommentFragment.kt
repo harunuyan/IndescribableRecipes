@@ -1,14 +1,14 @@
-package com.ui.fragment
+package com.ui.fragment.comment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.volie.indescribablerecipes.databinding.FragmentAddRecipesBinding
+import com.volie.indescribablerecipes.databinding.FragmentCommentBinding
 
-class AddRecipesFragment : Fragment() {
-    private var _mBinding: FragmentAddRecipesBinding? = null
+class CommentFragment : Fragment() {
+    private var _mBinding: FragmentCommentBinding? = null
     private val mBinding get() = _mBinding!!
 
     override fun onCreateView(
@@ -16,7 +16,7 @@ class AddRecipesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _mBinding = FragmentAddRecipesBinding.inflate(inflater, container, false)
+        _mBinding = FragmentCommentBinding.inflate(inflater, container, false)
         return mBinding.root
     }
 

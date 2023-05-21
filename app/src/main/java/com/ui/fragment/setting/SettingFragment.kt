@@ -1,4 +1,4 @@
-package com.ui.fragment
+package com.ui.fragment.setting
 
 import androidx.fragment.app.Fragment
 import dagger.hilt.android.AndroidEntryPoint

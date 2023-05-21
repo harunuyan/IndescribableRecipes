@@ -1,4 +1,4 @@
-package com.ui.fragment
+package com.ui.fragment.notification
 
 import android.os.Bundle
 import android.view.LayoutInflater
