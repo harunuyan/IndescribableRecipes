@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_recipes_item"
+        android:layout_width="180dp"
+        android:layout_height="280dp"
+        android:src="@color/DimGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RadiusImageView2" />
+
+    <ImageView
+        android:id="@+id/iv_add_bookmark_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/red"
+        android:padding="8dp"
+        android:src="@drawable/ic_bookmark_filled"
+        app:layout_constraintEnd_toEndOf="@id/iv_recipes_item"
+        app:layout_constraintTop_toTopOf="@id/iv_recipes_item" />
+
+    <TextView
+        android:id="@+id/tv_recipe_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:lineSpacingExtra="10dp"
+        android:maxLength="30"
+        android:text="Vegetable and Fruit Salat with"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/iv_user_profile_photo"
+        app:layout_constraintEnd_toEndOf="@id/iv_recipes_item"
+        app:layout_constraintStart_toStartOf="@id/iv_recipes_item" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_user_profile_photo"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="12dp"
+        android:src="@color/red"
+        app:layout_constraintBottom_toBottomOf="@id/iv_recipes_item"
+        app:layout_constraintStart_toStartOf="@id/iv_recipes_item"
+        app:shapeAppearanceOverlay="@style/CircularImageView" />
+
+    <TextView
+        android:id="@+id/tv_display_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Jane Cooper"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_profile_photo"
+        app:layout_constraintEnd_toEndOf="@id/iv_recipes_item"
+        app:layout_constraintStart_toEndOf="@id/iv_user_profile_photo"
+        app:layout_constraintTop_toTopOf="@id/iv_user_profile_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

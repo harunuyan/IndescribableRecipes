@@ -19,4 +19,9 @@
         <item name="cornerSize">5%</item>
     </style>
 
+    <style name="RadiusImageView2" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
 </resources>
