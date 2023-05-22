@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="@id/iv_profile_photo" />
 
     <TextView
-        android:id="@+id/tv_nickname"
+        android:id="@+id/tv_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
