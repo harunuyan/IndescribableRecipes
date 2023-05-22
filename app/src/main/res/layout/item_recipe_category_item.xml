@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_category_item"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:src="@color/DimGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RadiusImageView2" />
+
+    <TextView
+        android:id="@+id/tv_vegetable_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:lineSpacingExtra="10dp"
+        android:maxLength="30"
+        android:text="Salad"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_item_view_count"
+        app:layout_constraintStart_toStartOf="@id/iv_category_item" />
+
+    <TextView
+        android:id="@+id/tv_item_view_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="16,278 recipes"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/iv_category_item"
+        app:layout_constraintStart_toStartOf="@id/iv_category_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
