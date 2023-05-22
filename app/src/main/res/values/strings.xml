@@ -60,4 +60,7 @@
     <string name="twitter">Twitter</string>
     <string name="www_twitter_com_example">www.twitter.com/example</string>
     <string name="other">Other</string>
+    <string name="top">Top</string>
+    <string name="newest">Newest</string>
+    <string name="oldest">Oldest</string>
 </resources>
