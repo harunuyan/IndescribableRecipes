@@ -61,9 +61,9 @@
         android:name="com.ui.fragment.my_recipes.MyDraftRecipesFragment"
         android:label="MyDraftRecipesFragment" />
     <fragment
-        android:id="@+id/profileEditFragment"
+        android:id="@+id/personalInfoFragment"
         android:name="com.ui.fragment.setting.PersonalInfoFragment"
-        android:label="ProfileEditFragment" />
+        android:label="PersonalInfoFragment" />
     <fragment
         android:id="@+id/myPublishedRecipesFragment"
         android:name="com.ui.fragment.my_recipes.MyPublishedRecipesFragment"
@@ -92,4 +92,8 @@
         android:id="@+id/profileAboutFragment"
         android:name="com.ui.fragment.profile.ProfileAboutFragment"
         android:label="ProfileAboutFragment" />
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.ui.fragment.profile.ProfileEditFragment"
+        android:label="ProfileEditFragment" />
 </navigation>
