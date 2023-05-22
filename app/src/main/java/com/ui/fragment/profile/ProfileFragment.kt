@@ -36,13 +36,18 @@ class ProfileFragment : Fragment() {
             pages
         )
 
-        mBinding.viewPagerProfile.adapter = adapter
-        TabLayoutMediator(mBinding.tabLayoutProfile, mBinding.viewPagerProfile) { tab, position ->
-            when (position) {
-                0 -> tab.text = "Recipes"
-                1 -> tab.text = "About"
-            }
-        }.attach()
+        with(mBinding) {
+            viewPagerProfile.adapter = adapter
+            TabLayoutMediator(
+                tabLayoutProfile,
+                viewPagerProfile
+            ) { tab, position ->
+                when (position) {
+                    0 -> tab.text = "Recipes"
+                    1 -> tab.text = "About"
+                }
+            }.attach()
+        }
     }
 
     override fun onDestroy() {

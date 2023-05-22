@@ -40,15 +40,18 @@ class PersonalInfoFragment : Fragment() {
             android.R.layout.simple_dropdown_item_1line,
             genderOptions
         )
-        mBinding.genderDropdown.setAdapter(adapter)
 
-        mBinding.genderDropdownLayout.setOnClickListener {
-            mBinding.genderDropdown.showDropDown()
-        }
+        with(mBinding) {
+            genderDropdown.setAdapter(adapter)
 
-        mBinding.genderDropdown.setOnItemClickListener { _, _, position, _ ->
-            val selectedGender = adapter.getItem(position).toString()
-            mBinding.genderDropdownLayout.hint = selectedGender
+            genderDropdownLayout.setOnClickListener {
+                genderDropdown.showDropDown()
+            }
+
+            genderDropdown.setOnItemClickListener { _, _, position, _ ->
+                val selectedGender = adapter.getItem(position).toString()
+                genderDropdownLayout.hint = selectedGender
+            }
         }
     }
 
@@ -66,11 +69,10 @@ class PersonalInfoFragment : Fragment() {
         val month = currentDate.get(Calendar.MONTH)
         val day = currentDate.get(Calendar.DAY_OF_MONTH)
 
-        val datePickerDialog =
-            DatePickerDialog(requireContext(), { _, selectedYear, selectedMonth, selectedDay ->
-                val formattedDate = DateManager.formatDate(selectedYear, selectedMonth, selectedDay)
-                mBinding.etDateOfBirth.setText(formattedDate)
-            }, year, month, day).show()
+        DatePickerDialog(requireContext(), { _, selectedYear, selectedMonth, selectedDay ->
+            val formattedDate = DateManager.formatDate(selectedYear, selectedMonth, selectedDay)
+            mBinding.etDateOfBirth.setText(formattedDate)
+        }, year, month, day).show()
     }
 
     override fun onDestroy() {

@@ -40,16 +40,19 @@ class NotificationFragment : Fragment() {
         )
 
         val adapter = ViewPagerAdapter(requireActivity(), pages)
-        mBinding.viewPagerNotification.adapter = adapter
-        TabLayoutMediator(
-            mBinding.tabLayoutNotification,
-            mBinding.viewPagerNotification
-        ) { tab, position ->
-            when (position) {
-                0 -> tab.text = "General"
-                1 -> tab.text = "System"
-            }
-        }.attach()
+
+        with(mBinding) {
+            viewPagerNotification.adapter = adapter
+            TabLayoutMediator(
+                tabLayoutNotification,
+                viewPagerNotification
+            ) { tab, position ->
+                when (position) {
+                    0 -> tab.text = "General"
+                    1 -> tab.text = "System"
+                }
+            }.attach()
+        }
     }
 
     override fun onDestroy() {

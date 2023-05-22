@@ -29,17 +29,19 @@ class MyRecipesFragment : Fragment() {
             MyPublishedRecipesFragment()
         )
 
-        val adapter = ViewPagerAdapter(requireActivity(), pages)
-        mBinding.viewPagerMyRecipes.adapter = adapter
-        TabLayoutMediator(
-            mBinding.tabLayoutMeyRecipes,
-            mBinding.viewPagerMyRecipes
-        ) { tab, position ->
-            when (position) {
-                0 -> tab.text = "Draft"
-                1 -> tab.text = "Published"
-            }
-        }.attach()
+        with(mBinding) {
+            val adapter = ViewPagerAdapter(requireActivity(), pages)
+            viewPagerMyRecipes.adapter = adapter
+            TabLayoutMediator(
+                tabLayoutMeyRecipes,
+                viewPagerMyRecipes
+            ) { tab, position ->
+                when (position) {
+                    0 -> tab.text = "Draft"
+                    1 -> tab.text = "Published"
+                }
+            }.attach()
+        }
     }
 
     override fun onDestroy() {
