@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_user_profile_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircularImageView" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Benny Spanbauer"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_profile_photo"
+        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintStart_toEndOf="@id/iv_user_profile_photo"
+        app:layout_constraintTop_toTopOf="@id/iv_user_profile_photo" />
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@id/tv_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_user_name" />
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_user_profile_photo"
+        app:layout_constraintTop_toBottomOf="@id/iv_user_profile_photo" />
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintStart_toStartOf="@id/iv_user_profile_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_comment_content" />
+
+    <TextView
+        android:id="@+id/tv_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="356"
+        android:textColor="@color/DimGray"
+        app:layout_constraintBottom_toBottomOf="@id/iv_like"
+        app:layout_constraintStart_toEndOf="@id/iv_like"
+        app:layout_constraintTop_toTopOf="@id/iv_like" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="1 month ago"
+        android:textColor="@color/DimGray"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_like_count"
+        app:layout_constraintStart_toEndOf="@id/tv_like_count"
+        app:layout_constraintTop_toTopOf="@id/tv_like_count" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_like" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
