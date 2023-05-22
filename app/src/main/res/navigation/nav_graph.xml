@@ -48,4 +48,48 @@
         android:id="@+id/myRecipesFragment"
         android:name="com.ui.fragment.my_recipes.MyRecipesFragment"
         android:label="MyRecipesFragment" />
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.ui.fragment.comment.CommentFragment"
+        android:label="CommentFragment" />
+    <fragment
+        android:id="@+id/mostPopularFragment"
+        android:name="com.ui.fragment.most_popular.MostPopularFragment"
+        android:label="MostPopularFragment" />
+    <fragment
+        android:id="@+id/myDraftRecipesFragment"
+        android:name="com.ui.fragment.my_recipes.MyDraftRecipesFragment"
+        android:label="MyDraftRecipesFragment" />
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.ui.fragment.setting.PersonalInfoFragment"
+        android:label="ProfileEditFragment" />
+    <fragment
+        android:id="@+id/myPublishedRecipesFragment"
+        android:name="com.ui.fragment.my_recipes.MyPublishedRecipesFragment"
+        android:label="MyPublishedRecipesFragment" />
+    <fragment
+        android:id="@+id/recipeDetailsFragment"
+        android:name="com.ui.fragment.recipe_details.RecipeDetailsFragment"
+        android:label="RecipeDetailsFragment" />
+    <fragment
+        android:id="@+id/recentCategoriesDetailsFragment"
+        android:name="com.ui.fragment.categories_details.RecentCategoriesDetailsFragment"
+        android:label="RecentCategoriesDetailsFragment" />
+    <fragment
+        android:id="@+id/profileRecipesFragment"
+        android:name="com.ui.fragment.profile.ProfileRecipesFragment"
+        android:label="ProfileRecipesFragment" />
+    <fragment
+        android:id="@+id/recipeCategoriesFragment"
+        android:name="com.ui.fragment.categories.RecipeCategoriesFragment"
+        android:label="RecipeCategoriesFragment" />
+    <fragment
+        android:id="@+id/recentRecipesFragment"
+        android:name="com.ui.fragment.recent_recipes.RecentRecipesFragment"
+        android:label="RecentRecipesFragment" />
+    <fragment
+        android:id="@+id/profileAboutFragment"
+        android:name="com.ui.fragment.profile.ProfileAboutFragment"
+        android:label="ProfileAboutFragment" />
 </navigation>
