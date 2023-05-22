@@ -42,7 +42,7 @@ class ProfileFragment : Fragment() {
                 0 -> tab.text = "Recipes"
                 1 -> tab.text = "About"
             }
-        }
+        }.attach()
     }
 
     override fun onDestroy() {
