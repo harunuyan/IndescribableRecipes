@@ -25,6 +25,19 @@
         app:layout_constraintEnd_toEndOf="@id/iv_recipes_item"
         app:layout_constraintTop_toTopOf="@id/iv_recipes_item" />
 
+    <ImageView
+        android:id="@+id/iv_edit_my_recipe_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/circular_background"
+        android:backgroundTint="@color/red"
+        android:padding="8dp"
+        android:src="@drawable/ic_edit_pp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/iv_recipes_item"
+        app:layout_constraintTop_toTopOf="@id/iv_recipes_item" />
+
     <TextView
         android:id="@+id/tv_recipe_item_title"
         android:layout_width="0dp"
